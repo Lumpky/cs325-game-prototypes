@@ -50,9 +50,9 @@ function preload ()
 {
     this.load.image('tiles', [ 'assets/drawtiles1.png', 'assets/drawtiles1_n.png' ]);
     this.load.image('oldest', 'assets/player.jpg');
-    this.load.image('sibling1', 'assets/sibling1.JPG');
-    this.load.image('sibling2', 'assets/sibling2.JPG');
-    this.load.image('sibling3', 'assets/sibling3.JPG');
+    this.load.image('sibling1', 'assets/sibling1.jpg');
+    this.load.image('sibling2', 'assets/sibling2.jpg');
+    this.load.image('sibling3', 'assets/sibling3.jpg');
     this.load.tilemapCSV('map', 'assets/grid.csv');
 }
 
