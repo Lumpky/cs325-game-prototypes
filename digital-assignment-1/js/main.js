@@ -49,7 +49,7 @@ var game = new Phaser.Game(config);
 function preload ()
 {
     this.load.image('tiles', [ 'assets/drawtiles1.png', 'assets/drawtiles1_n.png' ]);
-    this.load.image('oldest', 'assets/player.jpg');
+    this.load.image('oldest', 'assets/player.png');
     this.load.image('sibling1', 'assets/sibling1.jpg');
     this.load.image('sibling2', 'assets/sibling2.jpg');
     this.load.image('sibling3', 'assets/sibling3.jpg');
