@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Find Your Siblings</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+The small images used in the game are original. Furthermore, although the concept is simple, the idea of the game is original. The game is also original because it is based off of my life. I am the oldest sibling of four, and a lot of my life has centered around my siblings' actions.
+</li>
+
+<li><strong>Technical Merit:</strong>
+Some interesting things about the game's technology include how the player token rotates depending on the input the computer is given. In addition, there is a light that shines from the player token. I could not get the other images in the game to remain hidden and react to the light, so I did the next closest thing. Whenever the player gets within 3 squares of a sibling, that sibling appears. Essentially, this means that the siblings stay hidden and "kind of" react to the light.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned a lot of basic JavaScript and Phaser syntax and tools that I did not know existed before. I am not very familiar with JavaScript and I did not know any Phaser before developing this prototype.
+The easiest part of making it was coming up with the idea. I quickly came up with an idea based off of one of the themes provided. The hardest part of making the prototype was having to essentially learn JavaScript and Phaser on the fly since I had not really developed with them before.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Underlying Grid Structure: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/tilemaps/csv/grid.csv">Grid</a></li>
+<li>Tile images: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/tilemaps/tiles/drawtiles1.png">Tiles</a></li>
+<li>Tile images <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/tilemaps/tiles/drawtiles1_n.png">More Tiles</a></li>
+<li>The tokens in the game representing the player and the siblings were my own pictures of myself and my siblings.</li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+The other game that most closely resembles my game is Light Map game which is a Phaser Example. However, I used some other Phaser examples to learn how to use some of the Phaser features such as a timer. Below is a list of Phaser examples that I used code from or referenced:
+<ul>
+<li>Light Map Phaser Example: <a href="https://phaser.io/examples/v3/view/tilemap/light-map">Light Map</a></li>
+<li>Basic Text Phaser Example: <a href="https://phaser.io/examples/v3/view/game-objects/text/basic-text">Basic Text</a></li>
+<li>Destroy an Image Phaser Example: <a href="https://phaser.io/examples/v3/view/game-objects/images/destroy-an-image">Destroy an Image</a></li>
+<li>Listen to Game Object Event Phaser Example: <a href="https://phaser.io/examples/v3/view/events/listen-to-game-object-event">Listen to Game Object Event</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+Your three younger siblings are list in a dark, abandoned building, and you must find them before time runs out!
+</li>
+
+<li><strong>Theme:</strong>
+The Storymatic theme I used was "Found Family." My game uses this theme because you must, as the player, literally find you family before time runs out!
+</li>
+
+<li><strong>Mandated Variety:</strong>
+The input that was used in this game is the arrow keys on the keyboard. As a result, the input that is used is "keyboard." The randomness for this game is "deterministic." The genre is "puzzle." Lastly, the play style(s) used in this prototype are "Joker" and "Collector."
+These play styles apply to my game because the player has to "collect" the younger siblings in order to win. They also have to "collect" the location of those younger siblings. The "Joker" play style applies because the game is just fun to play and does not require any other player to play with. Also, the situation that encompasses the game provides some humor for the player which also emphasizes the "Joker" play style.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The game mechanic that this prototype is evaluating is "grid-style" board for the game as well as images in Phaser. The game "hides" some of the images and only reveals them when certain criteria is met.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want the players to have a fun and slightly challenging experience with the game. Although the spots in which the siblings are placed are not random, I hope some of the other aspects of the game increase its difficulty.
+</li>
+
+<li><strong>Gameplay:</strong>
+The gameplay is centered around a token representing the player. A player can use the arrow keys on a keyboard to move the player token around. The player is unable to move through walls, so this creates a "maze" that the player must navigate through. The keyboard interaction is the only input that goes into the game. The system is dynamic in that if a player comes close enough to a sibling token, then that sibling token is revealed to the player. The player must then go and move their token onto the location of the sibling token to "find" that sibling and increase their score. When this happens, that sibling token is removed from the board. The core mechanic is the hidden sibling tokens and the effect that proximity has on them which poses a challenge. The game would be trivial without this mechanic in it.
+Some gameplay that is not in the prototype includes the randomization of the locations of the sibling tokens. This would add a level of replayability to the game becasue the siblings would not be in the same place every time.
+</li>
+
+<li><strong>Strategies:</strong>
+I expect that players will use a couple strategies that will be effective when playing the game. The first strategy is one in which the player will try to discover the location of all of the sibling tokens before going to "find" any of them. The second strategy that I expect players will use is to go and "find" a sibling token if they discover its location before moving onto the next one. The last strategy that I expect players will use is to start on one side of the map/board and travel through all of the possible squares to cover as much of the map as possible to discover the locations of the sibling tokens.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+The wold the game is set in is a dark, abandoned building. The characters include the older sibling and three younger siblings. The setting and its occupants are interesting because there is not much know of them. This adds a bit of mystery to the game as well as adds a level of imaginitive thinking for the players. The world is also interesting becuase light and proximity seemingly have an effect on the world and its occupants. The occupants of the world are interesting because they are actually based off of my own life. The player token (represented by an image of me) represents the older sibling with three younger siblings. The sibling tokens represent the three younger siblings of the older sibling and are depicted by images of my three younger sisters).
+The backstory is that you, the oldest sibling of four, and your younger siblings have stumbled into a dark, abandoned building and have all become separated! You, the player, must find your three younger siblings before time is up! The dramatic tension will interact with the gameplay tension because the dramatic tension will be empahsized by the presence of a timer which will in turn increase the dramatic tension.
+</li>
+
+<li><strong>Target Audience:</strong>
+The demographic I am trying to reach is people with younger siblings who know how troublesome (but fun) they can be.
+</li>
+
+<li><strong>Play Time:</strong>
+The game takes 30 seconds to play.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
