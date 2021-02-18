@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Escape the Desert!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+The idea behind the game is original. Although the physics in the game are simple and the assets were from Phaser examples, the idea behind the game and some of the non-obvious features are all original.
+</li>
+
+<li><strong>Technical Merit:</strong>
+One of the interesting technical aspects of the game is the physics behind the jumping. When a player gets near an oasis on the map, their velocity is increased because they are "hydrated." Furthemore, the game utilizes a sprite which adds some animation to the player. In addition, the camera in the game is dynamic.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned a lot about basic Phaser physics. I had not worked with game physics before, so I learned how basic collisions and gravity worked with Phaser. In addition, I used one of the sprites from a Phaser example which included a few animations and I learned how that could be applied to animate movement.
+The easiest part of making it was getting everything "started". By that I mean completing things like getting the images loaded in and initial steps such as that. The basic Phaser and JavaScript that I learned last week helped complete that quickly. The hardest part of making the prototype was needing to apply and learn how the physics worked in Phaser.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Desert Map: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/tests/camera/earthbound-scarab.png">Map</a></li>
+<li>Player Image: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/src/games/firstgame/assets/dude.png">Player</a></li>
+<li>Platform Image <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/src/games/firstgame/assets/platform.png">Platform</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+The Basic Platorm Phaser Example game most closely resembles my game, but the game Doodlejump also resembles my game closely since it is a platormer. Below is a list of the Phaser examples that I borrowed code from or referenced when making the game.
+<ul>
+<li>Camera Alpha Phaser Example: <a href="https://phaser.io/examples/v3/view/camera/camera-alpha">Camera Alpha</a></li>
+<li>Basic Platform Phaser Example: <a href="https://phaser.io/examples/v3/view/physics/arcade/basic-platform">Basic Platform</a></li>
+<li>Follow Zoom Phaser Example: <a href="https://phaser.io/examples/v3/view/camera/follow-zoom">Follow Zoom</a></li>
+<li>Listen to Game Object Event Phaser Example: <a href="https://phaser.io/examples/v3/view/events/listen-to-game-object-event">Listen to Game Object Event</a></li>
+<li>Collision Direction Phaser Example: <a href="https://phaser.io/examples/v3/view/physics/arcade/collision-direction">Collision Direction</a></li>
+<li>Basic Text Phaser Example: <a href="https://phaser.io/examples/v3/view/game-objects/text/basic-text">Basic Text</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+You are stranded in a desert! Thank goodness there are some oases nearby! Use them to hydrate and escape the desert!
+</li>
+
+<li><strong>Theme:</strong>
+The Storymatic theme I used was "Oasis." My game uses this theme because the player is in a desert and when they get near an oasis on the map, they get a temporary jump height boost.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+The input that was used in this game is the arrow keys on the keyboard used to jump and move. The randomness level is "a lot of randomness." The genre of the game is "platformer." The play style used in the game is "Achiever."
+The play style is "Achiever" because the player must successfully jump all the way to the top of the map in order to win.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The game prototype if evaluating the physics game mechanics such as collisions. The prototype is also evaluating the camera in the game, and specifically, the way the camera follows the player around. 
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want the player to have a challenging, but fun experience. The player needs to navigate through some challenging obstacles throughout the game which will create a challenging environment.
+</li>
+
+<li><strong>Gameplay:</strong>
+The gameplay starts with the player at the bottom of the map. The player then needs to use the arrow keys to jump and manuvuer through a series of platforms in order to get to the top of the map to win. The keyboard input is the only input that the player provides into the game. There are dynamic aspects to the system such as movement of the player and platforms and the increase in speed. Once the player reaches the top of the map, they win. The game's core game mechanic is the jumping and moving of the player as this allows the player to progress.
+One piece of gameplay that is not in the prototype is the ability to refill one's waterbottle that would be present on screen by clicking on the oases throughout the map.
+</li>
+
+<li><strong>Strategies:</strong>
+I expect the player to be patient and try to progress up the platforms slowly as they move. Another strategy I expect players to employ is to use the jump boosts from getting near an oasis by calculating the perfect time to get the most out of that jump.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+The game takes place in a desert. The character is the player's character who must escape the desert. The player and platforms in the level are interesting because they are able to move which makes the world dynamic. The world is interesting because of its dynamic and hidden aspects such as the jump boost from getting near an oasis.
+The game's backstory is that the player is stranded in a desert and must escape! The player must move through obstacles in order to escape the desert and win the game. The dramatic and gameplay tensions interact in that the player may fall all they way to the bottom which may cause the dramatic tension to increase in addition to the gameplay tension because the player would be further from escaping the desert.
+</li>
+
+<li><strong>Target Audience:</strong>
+The target audience is anyone! Anyone is able to play the game and have a fun experience.
+</li>
+
+<li><strong>Play Time:</strong>
+The game usually takes between 20 and 40 seconds to play.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
