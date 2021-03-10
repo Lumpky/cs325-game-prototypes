@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Fame and Glory!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+The idea behind the game is original. Although RPG's have been made before, this one is unique because of the random map each time you play the game. Furthermore, the 
+idea behind the concept of the game is original. In addition, although most RPG's have a sense of randomness whether that be how much damage you do on an attack or
+how many enemies will be present in a certain room, this game randomizes the map each time the game is played.
+</li>
+
+<li><strong>Technical Merit:</strong>
+This game utilizes some more advanced technical aspects of Phaser that I found interesting and challenging to implement since I do not have any prior knowledge or
+experience with Phaser. First, the game utilizes code from a Phaser example which randomizes the map each time the game is played. This adds a level of replayability
+to the game since it is a different experience each time the player starts up the game again. Furthermore, the game takes in multiple forms of input with two "keyset"
+options to move around (by either using the arrow keys or WASD) as well as from the mouse which the player uses to interact with certain aspects of the game. Furthermore,
+the player's character uses different animations based off of what it is doing. Many of the "sprites" implemented into the game also have animations connected to them
+which are played all the time or only when the player interacts with something.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned a lot about different aspects of Phaser that I had not utlized before. Although I had implemented a tilemap into my first game, I had not dealt with randomness
+associated with tilemaps before, and each time the game is played, the map (which is a tilemap) is randomized. In addition, I got to learn how animations work in Phaser
+because most (if not all) of the "sprites" that I implemented in this game also had some sort of animation tied to it that could be played. Furthermore, I learned how
+to manage different input events and how to connect those to certain events occurring in the game. The easiest part of making the game was coming up with the idea.
+I have been wanting to make an RPG, but this week's themes allowed me to finally do that. The hardest part of creating this game was learning the technical aspects of
+Phaser that I was dealing with. In particular, I had not used animations before, and one of the Phaser examples randomly created a dungeon, but used other code outside
+of Phaser to do it. As a result, I also had to learn how that code worked.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Dungeon Map Tiles: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/tilemaps/tiles/buch-dungeon-tileset-extruded.png">Dungeon Tiles</a></li>
+<li>Knight Image(s): <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/animations/knight.png">Knight</a></li>
+<li>Knight Animations Code: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/animations/knight.json">Knight Animations</a></li>
+<li>Mummy Image(s): <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/animations/mummy37x45.png">Mummy Image</a></li>
+<li>Coin Image(s) <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/tilemaps/tiles/fantasy-tiles.png">Fantasy Tiles</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+The Dungeon Generator Phaser Example most closely resembles my game. Below is a list of the different Phaser Examples that I borrowed code from or referenced.
+<ul>
+<li>Dungeon Generator Phaser Example: <a href="http://phaser.io/examples/v3/view/tilemap/dungeon-generator">Dungeon Generator</a></li>
+<li>Chained Animation Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/chained-animation">Chained Animation</a></li>
+<li>Add Key Phaser Example: <a href="http://phaser.io/examples/v3/view/input/keyboard/add-key">Add Key</a></li>
+<li>Single Sprite Phaser Example: <a href="http://phaser.io/examples/v3/view/input/mouse/single-sprite">Single Sprite</a></li>
+<li>Animation Repeat Event Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/animation-repeat-event">Animation Repeat Event</a></li>
+<li>Create Animation from Sprite Sheet Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/create-animation-from-sprite-sheet">Create Animation from Sprite Sheet</a></li>
+<li>Show Animation Play Through Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/show-animation-play-through">Show Animation Play Through</a></li>
+<li>Tile Properties Phaser Example: <a href="http://phaser.io/examples/v3/view/tilemap/tile-properties">Tile Properties</a></li>
+<li>On Repeat Event Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/on-repeat-event">On Repeat Event</a></li>
+<li>Mouse Down Phaser Example: <a href="http://phaser.io/examples/v3/view/input/mouse/mouse-down">Mouse Down</a></li>
+<li>Change Text Phaser Example: <a href="http://phaser.io/examples/v3/view/game-objects/text/change-text">Change Text</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+You are a noble knight who has ventured into a maze-like dungeon to seek fame and glory in your kingdom. Will you prevail and become the most famous knight of all!?
+</li>
+
+<li><strong>Theme:</strong>
+The Storymatic theme that I used in this game was "Fame." As a knight, the player seeks to slay monsters and find treasure to gain enough "fame points" to become the
+most famous knight of all!
+</li>
+
+<li><strong>Mandated Variety:</strong>
+The input used in the game has some direct and indirect aspects to it. The direct aspects include how the the player controls when the knight attacks and where the knight
+moves. However, the player also can click on treasure chests to open them which is separate from controlling the character. As a result, the opening of chests is indirect
+input. The game takes input from the keyboard as well as the mouse. The player may use the keyboard to move and the mouse to interact with treasure chests and monsters.
+The game also includes a lot of randomness due to how the map is random each time. However, the number of monsters in the game is deterministic. The genre of the game is
+a role-playing game (RPG). The play styles incorporated into this game include: "The Explorer," "The Collector," "The Achiever," and "The Storyteller." "The Explorer"
+play style relates to how the player can explore the dungeon. "The Collector" is incorporated by the fact that the player wants to collect coins and "fame points." "The
+Achiever" relates to how the player wants to become the most famous knight in the world by hitting a goal. "The Storyteller" relates to how the player can move in and
+interacts with a world of fantasy given a simple premise.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The game mechanic that this prototype is evaluating includes multiple versions of input being handled as well as the animations that are present and change in the game.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I hope that the player has a fun and slightly challenging experience. I simply want the player to feel accomplished when they win and interested while they are playing.
+</li>
+
+<li><strong>Gameplay:</strong>
+The gameplay spawns the player into a randomly generated dungeon at the start. The goal of the game is to gather enough "fame points" to become the most famous knight
+of all. The player can use the keyboard (arrow keys and WASD) to move the knight around the dungeon. The player can also use the mouse to click on monsters and treasure
+chests in order to interct with them. The player gets "fame points" by clicking on monsters to defeat them and clicking on treasure chests to open them. Some aspects of
+gameplay that are not in the prototype include a timer to add a level of challenge to the game as well as a dynamic number of monsters that appear on the map that move
+around to add a level of dynamic conflict to the game.
+</li>
+
+<li><strong>Strategies:</strong>
+I expect the player to use the strategy of trying to get the required number of "fame points" as quickly as possible. In addition, I expect the player to use a strategy
+of only interacting with the treasure chests to avoid the possibility of conflict with the monsters. The player may also decide to explore the entire map as a strategy
+to find the location to everything.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+The game takes place in a dungeon in a fantasy world, and the player must gather treasure and defeat monsters to gather "fame points" in order to become the most famous
+knight in the land. The player and monsters in the game are interesting in that the knight is trying to defeat them, but the monsters would have likely been untouched
+and unbothered if the knight had not travelled to the dungeon in search of fame. This adds an underlying ethical dilemma to the game to determine if it is acceptable for
+the knight to bother these monsters to defeat them. The characters are also unique in that they are unique to the game and its premise. The player token represents the
+knight and the mummy token represents a monster. The backstory is that the player is a knight in search of fame to become the most famous knight in the land. To achieve
+this goal, the knight travelled to a dungeon infested with monsters and filled with treasure in order to become more famous. The dramatic tension of the game connects to
+the gameplay tension of the game in that the player is trying to explore this "maze-like" dungeon and is worried that they may not find enough "fame points" which adds
+dramatic tension due to the gameplay tension produced by the map.
+</li>
+
+<li><strong>Target Audience:</strong>
+The target audience is anyone who wants to delve into a simple, fantasy world.
+</li>
+
+<li><strong>Play Time:</strong>
+The play time of the game varies, but usually takes about two minutes to play.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
