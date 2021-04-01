@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Side Hero!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+The idea and genre behind the game is original. Side Hero is a mix between a side-scroller and a role-playing game. Although this prototype does not have all of the aspects
+that would be in the final version, the idea is still original. I have not played a side-scrolling RPG before either, so the genre, or mix of genres, are original as
+well.
+</li>
+
+<li><strong>Technical Merit:</strong>
+This game has some technical merit that I have not explored before. First, the game uses animations for the player and the enemies. Specifically, the player's character
+has animations that interact when different inputs are given and end up interacting with each other. For instance, the player's character attacks when the mouse is
+clicked which causes a different animation to happen different than that of the animation that happens when the character is moving. Furthermore, I integrated a health
+tracking system in the game which keeps track of the player's health and the enemies health (under the hood). In this prototype, combat is initialized by the player in
+which if a player is close enough to an enemy and clicks to attack, then a single "round" of combat takes place between the player and the enemy. In addition, multiple
+forms of input are accepted by the game.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned a lot about different aspects of Phaser that I had not utlized before. Although I had implemented a tilemap into my first game, I had not dealt with randomness
+associated with tilemaps before, and each time the game is played, the map (which is a tilemap) is randomized. In addition, I got to learn how animations work in Phaser
+because most (if not all) of the "sprites" that I implemented in this game also had some sort of animation tied to it that could be played. Furthermore, I learned how
+to manage different input events and how to connect those to certain events occurring in the game. The easiest part of making the game was coming up with the idea.
+I have been wanting to make an RPG, but this week's themes allowed me to finally do that. The hardest part of creating this game was learning the technical aspects of
+Phaser that I was dealing with. In particular, I had not used animations before, and one of the Phaser examples randomly created a dungeon, but used other code outside
+of Phaser to do it. As a result, I also had to learn how that code worked.
+
+I learned about some new aspects of Phaser and laid the groundwork in this prototype for further Phaser exploration when I iterate on this prototype. For example, I
+learned more about Phaser animations and how they interact with each other. It is quite difficult to have a large array of animations occur on a single token,
+especially when the animations change based on input. In addition, I implemented a "health tracker" in the game for the player and the enemies which I had not done
+before, so it was interesting to think about and implement that into the game as I can now build off of that to perhaps change it to a class-like structure and build
+more into making a class that defines the entire character and everything associated with them. The easiest part of making the game was defining the general digital
+structure of the game since I had already made an analog game that related to this digital assignment. The hardest part of creating the game was dealing with the
+different animations of the player character since they interacted and changed frequently. In addition, it was also difficult to think about how to keep track of
+enemies, the player, and their attributes. Furthermore, it was difficult to learn all of the required Phaser aspects that were applicable to this game.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Super Mario Tiles: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/tilemaps/tiles/super-mario.png">Super Mario Tiles</a></li>
+<li>Super Mario Map: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/tilemaps/maps/super-mario.json">Super Mario Map</a></li>
+<li>Knight Image(s): <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/animations/knight.png">Knight</a></li>
+<li>Knight Animations Code: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/animations/knight.json">Knight Animations</a></li>
+<li>Mummy Image(s): <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/animations/mummy37x45.png">Mummy Image</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+The game Super Mario most closely resembles my game. Below is a list of the different Phaser Examples that I borrowed code from or referenced.
+<ul>
+<li>Pixel Art Test Phaser Example: <a href="http://phaser.io/examples/v3/view/tilemap/pixel-art-test">Pixel Art Test</a></li>
+<li>Mario Map Scroller Phaser Example: <a href="http://phaser.io/examples/v3/view/tilemap/mario-map-scroller">Mario Map Scroller</a></li>
+<li>Chained Animation Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/chained-animation">Chained Animation</a></li>
+<li>On Start Event Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/on-start-event">On Start Event</a></li>
+<li>On Complete Event Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/on-complete-event">On Complete Event</a></li>
+<li>On Update Event Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/on-update-event">On Update Event</a></li>
+<li>Follow Zoom Phaser Example: <a href="http://phaser.io/examples/v3/view/camera/follow-zoom">Follow Zoom</a></li>
+<li>Animation Repeat Event Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/animation-repeat-event">Animation Repeat Event</a></li>
+<li>Listen to Game Object Event Phaser Example: <a href="http://phaser.io/examples/v3/view/events/listen-to-game-object-event">Listen to Game Object Event</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+You are an ambitious adventurer hoping to become the next Side Hero! Will you be able to defeat the enemies and the boss in order to prevail and gain the title!?
+</li>
+
+<li><strong>Theme:</strong>
+This game does not use a Storymatic theme that was provided since they were optional for this assignment.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+The input used in the game has some direct and indirect aspects to it. The direct aspects include how the the player controls when the knight attacks and where the knight
+moves. However, the player also can click on treasure chests to open them which is separate from controlling the character. As a result, the opening of chests is indirect
+input. The game takes input from the keyboard as well as the mouse. The player may use the keyboard to move and the mouse to interact with treasure chests and monsters.
+The game also includes a lot of randomness due to how the map is random each time. However, the number of monsters in the game is deterministic. The genre of the game is
+a role-playing game (RPG). The play styles incorporated into this game include: "The Explorer," "The Collector," "The Achiever," and "The Storyteller." "The Explorer"
+play style relates to how the player can explore the dungeon. "The Collector" is incorporated by the fact that the player wants to collect coins and "fame points." "The
+Achiever" relates to how the player wants to become the most famous knight in the world by hitting a goal. "The Storyteller" relates to how the player can move in and
+interacts with a world of fantasy given a simple premise.
+
+The input that this game utilzies is direct with a couple of indirect input aspects. The player directly controls their character and what they do. However, the player's
+input impacts the game because it may get rid of enemies if they are defeated. The game is deterministic in that the outcome is largely deterministic. There is a
+small amount of randomness because the damage done in the game is determined randomly. However, I hope to include some more aspects of randomness in the next iteration
+such as the position and number of enemies. The genre of the game is both Side-Scroller and Role-Playing Game (RPG). The play styles that relate to this game are "The
+Explorer," and the "The Achiever." "The Explorer" relates because the player can explore the map and "The Achiever" relates because the player can win the game. 
+</li>
+
+<li><strong>Prototype Goal:</strong>
+The game mechanic that the prototype is evaluating is various animations interacting on a token at the same time as well as a side-scrolling map being present which
+restricts movement and the scope of the map.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I hope that the players have a fun experience in which they are determined to complete the game and win it. Although the game is simple, I still hope that the player
+experience is fun.
+</li>
+
+<li><strong>Gameplay:</strong>
+The gameplay starts by spawning the player character on the side-scrolling map. The goal of the game is to survive a journey through the map and then defeat the boss.
+The player is able to use the arrow keys and WASD to move the character side by side. In addition, the player can use the up arrow key to jump. When the player clicks,
+they attack. When the player character is close enough to an enemy and attacks, a "round" of combat occurs in which the player does damage first and then the enemy
+does damage if they were not defeated. If a player's health drops to zero or lower, they lose the game. If the player defeats the boss, then they win the game and gain
+the title of "Side Hero!" Some aspects of gameplay that are not in this prototype, but that I hope to include in the future iteration, include random enemy creation,
+ranged weapon attacks, physics that allow the player to jump and land on certain blocks, different scenes that provide turn-based combat, and powerups that the player
+can pick up and store in an inventory for future use.
+</li>
+
+<li><strong>Strategies:</strong>
+I expect the player to use a couple of different strategies. I plan to add more dynamic and automatic conflict into the game in the later iteration, but one strategy
+would be to ignore all of the smaller enemies and go straight for the boss. Another strategy I think players will use is to avoid combat if the character's health gets
+low.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+The game takes place in a dungeon in a fantasy world, and the player must gather treasure and defeat monsters to gather "fame points" in order to become the most famous
+knight in the land. The player and monsters in the game are interesting in that the knight is trying to defeat them, but the monsters would have likely been untouched
+and unbothered if the knight had not travelled to the dungeon in search of fame. This adds an underlying ethical dilemma to the game to determine if it is acceptable for
+the knight to bother these monsters to defeat them. The characters are also unique in that they are unique to the game and its premise. The player token represents the
+knight and the mummy token represents a monster. The backstory is that the player is a knight in search of fame to become the most famous knight in the land. To achieve
+this goal, the knight travelled to a dungeon infested with monsters and filled with treasure in order to become more famous. The dramatic tension of the game connects to
+the gameplay tension of the game in that the player is trying to explore this "maze-like" dungeon and is worried that they may not find enough "fame points" which adds
+dramatic tension due to the gameplay tension produced by the map.
+
+The game takes place in a fantasy-like, simple world in which the player is hoping to end the undead scourge that has plagued the land. Doing so grants them the title of
+"Side Hero." The goal of the game is to defeat the largest, most powerful undead creature in order to end the plague of undead in the land. The player character is 
+interesting in that there are many actions that the player can take that directly impact what the player character is doing or appears to be doing. The enemies in the
+game are interesting because they can actually hurt the player character and take health away. This adds a level of challenge and interactivity in the game and the
+conflict that occurs in the game. The player token represents the player character and protagonist in the game. The mummy token represents the enemies and undead
+creatures that are infecting the land. The backstory is that the player is an adventurer and aspiring hero who seeks to end the undead scourge on the land. They have
+travelled to the center of the undead territory to defeat the largest and most powerful undead leader or boss. The dramatic tension of the game connects to the gameplay
+tension of the game in that the player character is trying to survive and defeat the boss, but also encounters smaller enemies that can hinder their progress. As a result,
+the player's dramatic, over-arching goal can be stopped short if they are not careful with the gameplay choices they make while creating the game.
+</li>
+
+<li><strong>Target Audience:</strong>
+The target audience is anyone who enjoys a simple side-scroller, but will also appeal to those who enjoy role-playing games.
+</li>
+
+<li><strong>Play Time:</strong>
+The play time of the game varies slightly, but usually takes about one or two minutes to play.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
