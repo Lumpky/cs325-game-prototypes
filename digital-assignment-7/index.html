@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Side Hero!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+<ul>
+<li>The idea and genre behind the game is original. Side Hero is a mix between a side-scroller and a role-playing game. Although this prototype does not have all of the aspects
+that would be in the final version, the idea is still original. I have not played a side-scrolling RPG before either, so the genre, or mix of genres, are original as
+well.
+</li>
+<li>Iteration: The idea and concept behind the game is still original. The originality above also applies to this iteration of the game.
+</li>
+</ul>
+</li>
+
+<li><strong>Technical Merit:</strong>
+<ul>
+<li>
+This game has some technical merit that I have not explored before. First, the game uses animations for the player and the enemies. Specifically, the player's character
+has animations that interact when different inputs are given and end up interacting with each other. For instance, the player's character attacks when the mouse is
+clicked which causes a different animation to happen different than that of the animation that happens when the character is moving. Furthermore, I integrated a health
+tracking system in the game which keeps track of the player's health and the enemies health (under the hood). In this prototype, combat is initialized by the player in
+which if a player is close enough to an enemy and clicks to attack, then a single "round" of combat takes place between the player and the enemy. In addition, multiple
+forms of input are accepted by the game.
+</li>
+<li>
+Iteration: Scenes were also implemented in this iteration of the game. This allows for exploration and combat to be separate in the game since combat takes place in a
+different scene than that of the main one. Furthermore, physics was added to the game which causes the player to jump on a couple of platforms. In relation to the
+physics, collisions were implemented to trigger certain things such as combat with enemies or for the player to gain a powerup. In combat, I also added some interactive
+buttons to do certain things in combat. I also added functionality to keep track of the player's position and place them there when they transition back to the main
+scene from combat.
+</li>
+</ul>
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+<ul>
+<li>
+I learned about some new aspects of Phaser and laid the groundwork in this prototype for further Phaser exploration when I iterate on this prototype. For example, I
+learned more about Phaser animations and how they interact with each other. It is quite difficult to have a large array of animations occur on a single token,
+especially when the animations change based on input. In addition, I implemented a "health tracker" in the game for the player and the enemies which I had not done
+before, so it was interesting to think about and implement that into the game as I can now build off of that to perhaps change it to a class-like structure and build
+more into making a class that defines the entire character and everything associated with them. The easiest part of making the game was defining the general digital
+structure of the game since I had already made an analog game that related to this digital assignment. The hardest part of creating the game was dealing with the
+different animations of the player character since they interacted and changed frequently. In addition, it was also difficult to think about how to keep track of
+enemies, the player, and their attributes. Furthermore, it was difficult to learn all of the required Phaser aspects that were applicable to this game.
+</li>
+<li>
+Iteration: I was able to work with scenes for the first time, so I was able to learn a lot about how scenes work and how they can switched to to create different visuals
+for different purposes. For example, in my game I was able to separate the main scene and combat scenes which helped organize the game better. I was also able to add
+physics to the game which was one of the few times I have worked with physics in Phaser. I learned a lot more about collisions and how they can be used to trigger
+certain events. The easiest part of the game was generating the ideas and concepts for what I wanted to do since I already had a general idea of the features that I
+wanted to add to the game. The hardest part of the game was making sure that the scenes worked properly since there were many small syntax issues I ran into where
+I was forgetting an argument to a callback function or mistyped something. The scenes were also difficult since I had not worked with them before.
+</li>
+</ul>
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>Super Mario Tiles: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/tilemaps/tiles/super-mario.png">Super Mario Tiles</a></li>
+<li>Super Mario Map: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/tilemaps/maps/super-mario.json">Super Mario Map</a></li>
+<li>Knight Image(s): <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/animations/knight.png">Knight</a></li>
+<li>Knight Animations Code: <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/animations/knight.json">Knight Animations</a></li>
+<li>Mummy Image(s): <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/animations/mummy37x45.png">Mummy Image</a></li>
+<li>Sky Background (Combat Scenes): <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/skies/clouds.png">Sky Background</a></li>
+<li>Fantasy Tiles (Combat Scenes): <a href="https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/tilemaps/tiles/fantasy-tiles.png">Fantasy Tiles</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+The game Super Mario most closely resembles my game. Below is a list of the different Phaser Examples that I borrowed code from or referenced.
+<ul>
+<li>Pixel Art Test Phaser Example: <a href="http://phaser.io/examples/v3/view/tilemap/pixel-art-test">Pixel Art Test</a></li>
+<li>Mario Map Scroller Phaser Example: <a href="http://phaser.io/examples/v3/view/tilemap/mario-map-scroller">Mario Map Scroller</a></li>
+<li>Chained Animation Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/chained-animation">Chained Animation</a></li>
+<li>On Start Event Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/on-start-event">On Start Event</a></li>
+<li>On Complete Event Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/on-complete-event">On Complete Event</a></li>
+<li>On Update Event Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/on-update-event">On Update Event</a></li>
+<li>Follow Zoom Phaser Example: <a href="http://phaser.io/examples/v3/view/camera/follow-zoom">Follow Zoom</a></li>
+<li>Animation Repeat Event Phaser Example: <a href="http://phaser.io/examples/v3/view/animation/animation-repeat-event">Animation Repeat Event</a></li>
+<li>Listen to Game Object Event Phaser Example: <a href="http://phaser.io/examples/v3/view/events/listen-to-game-object-event">Listen to Game Object Event</a></li>
+<li>Gravity Phaser Example: <a href="http://phaser.io/examples/v3/view/physics/arcade/gravity">Gravity</a></li>
+<li>Add Body to Tilesprite Phaser Example <a href="http://phaser.io/examples/v3/view/physics/arcade/add-body-to-tilesprite">Add Body to Tilesprite</a></li>
+<li>Area Phaser Example: <a href="http://phaser.io/examples/v3/view/geom/rectangle/area">Area</a></li>
+<li>Basic Platform Phaser Example: <a href="http://phaser.io/examples/v3/view/physics/arcade/basic-platform">Basic Platform</a></li>
+<li>Body on a Path Phaser Example: <a href="http://phaser.io/examples/v3/view/physics/arcade/body-on-a-path">Body on a Path</a></li>
+<li>Scene Controller Phaser Example: <a href="http://phaser.io/examples/v3/view/scenes/tutorial/scene-controller">Scene Controller</a></li>
+<li>Transition Test 1 Phaser Example: <a href="http://phaser.io/examples/v3/view/scenes/transition-test-1">Transition Test 1</a></li>
+<li>Changing Scene Phaser Example: <a href="http://phaser.io/examples/v3/view/scenes/changing-scene">Changing Scene</a></li>
+<li>Collision Direction Phaser Example: <a href="http://phaser.io/examples/v3/view/physics/arcade/collision-direction">Collision Direction</a></li>
+<li>Custom Shape Hit Area Phaser Example: <a href="http://phaser.io/examples/v3/view/input/game-object/custom-shape-hit-area">Custom Shape Hit Area</a></li>
+<li>Click Sprite Phaser Example: <a href="http://phaser.io/examples/v3/view/input/mouse/click-sprite">Click Sprite</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+<ul>
+<li>
+You are an ambitious adventurer hoping to become the next Side Hero! Will you be able to defeat the enemies and the boss in order to prevail and gain the title!?
+</li>
+<li>
+Iteration: The High Concept of the game is still the same as the last (first) iteration.
+</li>
+</ul>
+</li>
+
+<li><strong>Theme:</strong>
+<ul>
+<li>
+This game does not use a Storymatic theme that was provided since they were optional for this assignment.
+</li>
+<li>
+Iteration: The game does not use any Storymatic theme.
+</li>
+</ul>
+</li>
+
+<li><strong>Mandated Variety:</strong>
+<ul>
+<li>
+The input that this game utilzies is direct with a couple of indirect input aspects. The player directly controls their character and what they do. However, the player's
+input impacts the game because it may get rid of enemies if they are defeated. The game is deterministic in that the outcome is largely deterministic. There is a
+small amount of randomness because the damage done in the game is determined randomly. However, I hope to include some more aspects of randomness in the next iteration
+such as the position and number of enemies. The genre of the game is both Side-Scroller and Role-Playing Game (RPG). The play styles that relate to this game are "The
+Explorer," and the "The Achiever." "The Explorer" relates because the player can explore the map and "The Achiever" relates because the player can win the game.
+</li>
+<li>
+Iteration: The same mandated variety aspects apply to this iteration as the first one. The input is still the same, but in combat the players can click buttons to control
+what is done by the character. Also, random aspects have been added to the game such as damage and certain powerups in the game. The genre and play styles are the same
+as the first iteration too.
+</li>
+</ul>
+</li>
+
+<li><strong>Prototype Goal:</strong>
+<ul>
+<li>
+The game mechanic that the prototype is evaluating is various animations interacting on a token at the same time as well as a side-scrolling map being present which
+restricts movement and the scope of the map.
+</li>
+<li>
+Iteration: The game mechanic that this prototype evaluates is the scene changing mechanic. Exploration and combat are separate in this game as both take place on different
+scenes.
+</li>
+</ul>
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+<ul>
+<li>
+I hope that the players have a fun experience in which they are determined to complete the game and win it. Although the game is simple, I still hope that the player
+experience is fun.
+</li>
+<li>
+Iteration: I hope that the players have the same player experience as with the first iteration.
+</li>
+</ul>
+</li>
+
+<li><strong>Gameplay:</strong>
+<ul>
+<li>
+The gameplay starts by spawning the player character on the side-scrolling map. The goal of the game is to survive a journey through the map and then defeat the boss.
+The player is able to use the arrow keys and WASD to move the character side by side. In addition, the player can use the up arrow key to jump. When the player clicks,
+they attack. When the player character is close enough to an enemy and attacks, a "round" of combat occurs in which the player does damage first and then the enemy
+does damage if they were not defeated. If a player's health drops to zero or lower, they lose the game. If the player defeats the boss, then they win the game and gain
+the title of "Side Hero!" Some aspects of gameplay that are not in this prototype, but that I hope to include in the future iteration, include random enemy creation,
+ranged weapon attacks, physics that allow the player to jump and land on certain blocks, different scenes that provide turn-based combat, and powerups that the player
+can pick up and store in an inventory for future use.
+</li>
+<li>
+Iteration: Some new gameplay aspects have been added in this iteration. First, combat is different in that when a player collides with an enemy, they are initiated into
+combat where they click buttons to determine what the character does to the enemy. I also added in powerups which appear to be colored squares on the map. If a player
+runs past a powerup, they gain its benefit. The blue powerup allows them to cast a powerful spell in combat. The teal powerup gives them the ability to add one damage to
+a swing in combat. The red powerup heals the player for 5 hit points. A player can see how much health and powerups they have in the top left of the screen. The player
+can also jump onto platforms throughout the map to reach certain enemies. Other than these changes, the gameplay is the same as the first iteration.
+</li>
+</ul>
+</li>
+
+<li><strong>Strategies:</strong>
+<ul>
+<li>
+I expect the player to use a couple of different strategies. I plan to add more dynamic and automatic conflict into the game in the later iteration, but one strategy
+would be to ignore all of the smaller enemies and go straight for the boss. Another strategy I think players will use is to avoid combat if the character's health gets
+low.
+</li>
+<li>
+Iteration: I expect that the players will use similar strategies as in the first iteration with a few additions. First, I expect the players to save their powerups until
+they have to fight the boss. I also expect players to only fight the enemies that are in their direct path, avoiding unecessary conflict.
+</li>
+</ul>
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+<ul>
+<li>
+The game takes place in a fantasy-like, simple world in which the player is hoping to end the undead scourge that has plagued the land. Doing so grants them the title of
+"Side Hero." The goal of the game is to defeat the largest, most powerful undead creature in order to end the plague of undead in the land. The player character is 
+interesting in that there are many actions that the player can take that directly impact what the player character is doing or appears to be doing. The enemies in the
+game are interesting because they can actually hurt the player character and take health away. This adds a level of challenge and interactivity in the game and the
+conflict that occurs in the game. The player token represents the player character and protagonist in the game. The mummy token represents the enemies and undead
+creatures that are infecting the land. The backstory is that the player is an adventurer and aspiring hero who seeks to end the undead scourge on the land. They have
+travelled to the center of the undead territory to defeat the largest and most powerful undead leader or boss. The dramatic tension of the game connects to the gameplay
+tension of the game in that the player character is trying to survive and defeat the boss, but also encounters smaller enemies that can hinder their progress. As a result,
+the player's dramatic, over-arching goal can be stopped short if they are not careful with the gameplay choices they make while creating the game.
+</li>
+<li>
+Iteration: The story, setting, and premise are all the same as the first iteration.
+</li>
+</ul>
+</li>
+
+<li><strong>Target Audience:</strong>
+<ul>
+<li>
+The target audience is anyone who enjoys a simple side-scroller, but will also appeal to those who enjoy role-playing games.
+</li>
+<li>
+Iteration: The target audience is the same as the first iteration.
+</li>
+</ul>
+</li>
+
+<li><strong>Play Time:</strong>
+<ul>
+<li>
+The play time of the game varies slightly, but usually takes about one or two minutes to play.
+</li>
+<li>
+Iteration: The play time is the same as the first iteration.
+</li>
+</ul>
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
