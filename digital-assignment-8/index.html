@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello! Amaze!</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>The Curator</h2>
+
+<ul>
+<li><strong>Originiality:</strong>
+<ul>
+<li>
+The idea behind the game is original as it takes place in a library in which you have to organize a book shelf full of books. Although it is a simple puzzle game, it can
+be expanded on with additional functionality that can make the game more challenging. Furthemore, all of the aspects of the game and the game objects that are present
+are all original as I coded them all in using Phaser.
+</li>
+</ul>
+</li>
+
+<li><strong>Technical Merit:</strong>
+<ul>
+<li>
+The technical merit of this game ties into the core mechanic which is moving the books into different locations in order to put them in the correct alphabetical order.
+The game precisely moves books from different stacks into other stacks or specific loactions. The game also has a timer implemented that adds an additional level of
+challenge to the game. The mouse controls all of the input in the game because there are twelve buttons that control what happens in the game. I also had specific 
+locations on the screen be used for the bookshelf, the stack of books, and the hands. So, when a button is clicked, a book is moved to one of those locations and
+this makes the locations of the books dynamic.
+</li>
+</ul>
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+<ul>
+<li>
+I was able to learn more about game objects in Phaser since this game doesn't actually use any assets and only uses game objects such as text game objects and rectangle
+objects in Phaser. This was also the first game in which I had to deal with arrays in JavaScript because the arrays acted as the stacks behind the scenes which manage
+which books are stored where on the screen. There is also a timer, but I was unable to figure out how to make the timer appear in just minutes and seconds, but that is
+something I hope to expand on in the next iteration. Also, for this first iteration, I made the game deterministic, but I hope to make the letters on the books random
+for the next iteration. The easiest part of making the game was getting all of the game objects in the correct places on the screen. Since I have dealt with the Phaser
+game objects before, I knew how to place them on the screen, I just had to figure out precisely where I wanted to put them. The hardest part of making the game was
+learning about arrays in JavaScript for the back-end stack storage. It was also difficult implement the logic behind what happens when a button is pressed because I
+needed to determine what arrays were altered as well as where the book would be moved to.
+</li>
+</ul>
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>I did not use any assets in this game. The "images" or "books" in the game are all Phaser game objects.</li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+I don't know if a game that closely resembles my game. I would say that maybe Tetris is the closest since it is a puzzle game that is dynamic. Below is a list of the different Phaser Examples that I borrowed code from or referenced.
+<ul>
+<li>Mouse Down Phaser Example: <a href="http://phaser.io/examples/v3/view/input/mouse/mouse-down">Mouse Down</a></li>
+<li>Listen to Game Object Event Phaser Example: <a href="http://phaser.io/examples/v3/view/events/listen-to-game-object-event">Listen to Game Object Event</a></li>
+<li>Rectangle Phaser Example: <a href="http://phaser.io/examples/v3/view/game-objects/shapes/rectangle">Rectangle</a></li>
+<li>Light Map Phaser Example: <a href="http://phaser.io/examples/v3/view/tilemap/light-map">Light Map</a></li>
+<li>Change Text Phaser Example: <a href="http://phaser.io/examples/v3/view/game-objects/text/change-text">Change Text</a></li>
+<li>Create from Config Phaser Example: <a href="http://phaser.io/examples/v3/view/game-objects/text/create-from-config">Create from Config</a></li>
+<li>Text Padding Phaser Example: <a href="http://phaser.io/examples/v3/view/game-objects/text/text-padding">Text Padding</a></li>
+<li>Text Origin Phaser Example: <a href="http://phaser.io/examples/v3/view/game-objects/text/text-origin">Text Origin</a></li>
+<li>Basic Text Phaser Example: <a href="http://phaser.io/examples/v3/view/game-objects/text/basic-text">Basic Text</a></li>
+</ul>
+</li>
+
+<li><strong>High Concept:</strong>
+<ul>
+<li>
+You are the curator to a famous library! Hurry! You must alphabetically organize the shelf of books before time runs out!
+</li>
+</ul>
+</li>
+
+<li><strong>Theme:</strong>
+<ul>
+<li>
+This game does not use a Storymatic them that was provided since they were optional for this digital iteration assigment.
+</li>
+</ul>
+</li>
+
+<li><strong>Mandated Variety:</strong>
+<ul>
+<li>
+The input for the game is indirect as you use the mouse to click buttons that then move the books around on the screen. As of right now, the game is deterministic, but
+I hope to make it more random in the next iteration. The randomness that I hope to implement is the letters on the books which I hope to randomize each game. I also
+hope to implement some more challenges in the game such as a "prankster" that takes books off of the shelf. The genre of the game is a Puzzle game. The play styles
+that relate to the game are "The Achiever" because you want to win the game as quickly as possible.
+</li>
+</ul>
+</li>
+
+<li><strong>Prototype Goal:</strong>
+<ul>
+<li>
+The core game mechanic that this prototype is evaluating is the movement of game objects which are stored in stacks in order to eventually align all of the game objects
+so that the correct order is displayed.
+</li>
+</ul>
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+<ul>
+<li>
+I hope that the players have a fun and challenging experience when playing the game. I hope that players feel a bit rushed due to the time, but a fun experience while
+trying to figure out the puzzle and win the game.
+</li>
+</ul>
+</li>
+
+<li><strong>Gameplay:</strong>
+<ul>
+<li>
+The gameplay begins with a stack of books being displayed, some books on a shelf, and the player having two hands (and twelve buttons) to work with. The goal is to align
+all of the books in the correct alphabetical order. The buttons can be pressed to control where the books are being stored, and these buttons are what are used to
+correctly align the books. If the player aligns the books correctly before time is over, they win. However, if time runs out before the books are correctly aligned,
+then the player loses. I hope to enhance the gameplay in the next iteration by adding in a "prankster" who takes books away and adds them in. I also hope to add in
+randomization of the letters on the books. These will add additional challenges in the gameplay.
+</li>
+</ul>
+</li>
+
+<li><strong>Strategies:</strong>
+<ul>
+<li>
+I expect that the players will use the right side of the shelf as another "stack" and place books there in order to find the next book in the correct alphabetical
+sequence. This will allow players to quickly filter through all of the books until the next book is found.
+</li>
+</ul>
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+<ul>
+<li>
+The game takes place in one of the most famous libraries in the world. The player is a curator for this library and is tasked with quickly organizing a bookshelf with
+a stack of books. The player must organize the books before the head curator comes to inspect the shelf and time runs out! There are two rectangles on the screen that
+represent the player's "hands" which can hold books and place them on the shelf or the stack. The game does not really have any backstory associated with it. The
+dramatic tension of the game connects to and corresponds to the gameplay tension because the gameplay tension is represented by the timer. However, the dramatic tension
+is getting caught by the head curator when time runs out. I hope to implement a scene in which the head curator makes an appearance in the next iteration.
+</li>
+</ul>
+</li>
+
+<li><strong>Target Audience:</strong>
+<ul>
+<li>
+The target audience is anyone, even younger players, who enjoy a simple, but fun puzzle to solve.
+</li>
+</ul>
+</li>
+
+<li><strong>Play Time:</strong>
+<ul>
+<li>
+The play time varies, but has a maximum limit of three minutes.
+</li>
+</ul>
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
